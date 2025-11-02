@@ -35,3 +35,23 @@ Through preprocessing (cleaning, interpolation, PCA, augmentation) and model opt
 - Matplotlib, Seaborn  
 
 ---
+
+# Pose Estimation Framework
+
+For pose estimation, this project utilizes RTMPose
+ —
+a state-of-the-art real-time multi-person human pose estimation framework developed by OpenMMLab as part of the MMPose library.
+
+RTMPose was employed to extract human keypoints (such as head, eyes, hands, and legs) from each video frame.
+These keypoints were later processed and used as input features for the machine learning models.
+
+Key RTMPose characteristics leveraged in this research:
+
+CSPNeXt backbone for efficient feature extraction
+
+SimCC (Simple Coordinate Classification) for precise keypoint localization
+
+Real-time multi-person support enabling scalable behavior analysis in unconstrained environments
+
+The extracted keypoints were exported as CSV files and later processed in the notebook
+model_training.ipynb for behavior classification.
